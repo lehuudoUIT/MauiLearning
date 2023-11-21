@@ -1,5 +1,6 @@
-﻿using Project1.Pages.FlyoutPages;
-using Project1.Pages.NavPages;
+﻿
+using Project1.Layouts;
+using AbsoluteLayout = Project1.Layouts.AbsoluteLayout;
 
 namespace Project1
 {
@@ -20,7 +21,7 @@ namespace Project1
 
             //Flyout nav
 
-            MainPage = new FlyoutPageDemo();
+            MainPage = new AbsoluteLayout();
         }
     }
 }
