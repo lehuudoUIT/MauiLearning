@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Pages.NavPages.NavPage1"
+             Title="This is Page 1"
+             BackgroundColor="DarkRed">
+    <VerticalStackLayout>
+        <Button 
+             x:Name="Btn1"
+             Text="Go to Page 1"
+             Clicked="Btn1_Clicked"
+             Margin="10"
+             BackgroundColor="Gold"
+             TextColor="Black"
+             FontSize="Large"/>
+    </VerticalStackLayout>
+</ContentPage>

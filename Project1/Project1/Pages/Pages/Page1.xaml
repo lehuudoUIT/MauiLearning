@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Pages.Page1"
+             Title="Page1"
+             BackgroundColor="Gold">
+    <Grid HorizontalOptions="Fill" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" 
+                       BackgroundColor="Green" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Fill">
+            <Label
+        Text="Page 1"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        Margin="5"
+        FontSize="Large"/>
+        </HorizontalStackLayout>
+
+        <Button 
+            x:Name="Btn1"
+            Grid.Row="1"
+            Text="Go to page 2"
+            Clicked="Btn1_Clicked"
+            Margin="10"/>
+
+        <HorizontalStackLayout Grid.Row="3" 
+                       BackgroundColor="Green" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Fill">
+        <Label
+            Text="End of page 1"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="5"
+            FontSize="Large"/>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.Pages.FlyoutPages.FlyoutPageDemo"
+             Title="FlyoutPageDemo"
+            FlyoutLayoutBehavior="Popover">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu" BackgroundColor="Gold">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="FlyoutPage.Flyout" FontSize="Large" TextColor="Black"/>
+                <Button Text="Page 1" FontSize="Large"/>
+                <Button Text="Page 2" FontSize="Large"/>
+                <Button Text="Page 3" FontSize="Large"/>
+                <Button Text="Page 4" FontSize="Large"/>
+                <Button Text="Page 5" FontSize="Large"/>
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage BackgroundColor="Green">
+                    <VerticalStackLayout>
+                        <Label Text="Flyout.Detail" FontSize="Large" TextColor="White"/>
+                        <Label Text="This is Root page" FontSize="Large" TextColor="White"/>
+                    </VerticalStackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
