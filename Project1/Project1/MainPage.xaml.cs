@@ -1,4 +1,5 @@
 ﻿using Project1.Pages.CarouselView;
+using Project1.Pages.ListView;
 
 namespace Project1
 {
@@ -14,6 +15,11 @@ namespace Project1
         private async void CarouselBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new CarouselIndicatorDemo());
+        }
+
+        private async void ListViewBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ListViewDemo());
         }
     }
 

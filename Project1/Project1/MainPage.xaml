@@ -17,9 +17,17 @@
             <VerticalStackLayout Grid.Row="1" Spacing="10">
                 <Button x:Name="CarouselBtn"
                         Text="Carousel View Demo" FontSize="Large" 
+                        WidthRequest="240"
+                        HeightRequest="50"
                         HorizontalOptions="Center"
-                        Clicked="CarouselBtn_Clicked"
-                        Margin="10"/>
+                        Clicked="CarouselBtn_Clicked"/>
+
+                <Button x:Name="ListViewBtn"
+                        Text="ListView Demo" FontSize="Large" 
+                        HorizontalOptions="Center"
+                        WidthRequest="240"
+                        HeightRequest="50"
+                        Clicked="ListViewBtn_Clicked"/>
             </VerticalStackLayout>
             <Frame Grid.Row="2" BackgroundColor="Navy">
                 <Label Text="[Footer] Learning MAUI" FontSize="Large" TextColor="White"
