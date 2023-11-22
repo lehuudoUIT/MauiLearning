@@ -28,6 +28,14 @@
                         WidthRequest="240"
                         HeightRequest="50"
                         Clicked="ListViewBtn_Clicked"/>
+
+                <Button x:Name="CollectionViewBtn"
+                        Text="Collection View Demo" FontSize="Large" 
+                        HorizontalOptions="Center"
+                        WidthRequest="240"
+                        HeightRequest="50"
+                        Clicked="CollectionViewBtn_Clicked"/>
+                
             </VerticalStackLayout>
             <Frame Grid.Row="2" BackgroundColor="Navy">
                 <Label Text="[Footer] Learning MAUI" FontSize="Large" TextColor="White"

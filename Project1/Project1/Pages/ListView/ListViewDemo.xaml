@@ -9,9 +9,7 @@
               SelectionMode="None">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Title}" Detail="{Binding Description}"
-                          TextColor="Green" DetailColor="Red"
-                          />
+                <ImageCell ImageSource="dotnet_bot.svg" Text="{Binding Title}"/>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

@@ -1,4 +1,5 @@
 ﻿using Project1.Pages.CarouselView;
+using Project1.Pages.CollectionView;
 using Project1.Pages.ListView;
 
 namespace Project1
@@ -20,6 +21,11 @@ namespace Project1
         private async void ListViewBtn_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ListViewDemo());
+        }
+
+        private async void CollectionViewBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CollectionViewDemo());
         }
     }
 
