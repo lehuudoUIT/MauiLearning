@@ -76,8 +76,8 @@
 
             <Frame>
                 <VerticalStackLayout>
-                    <Label Text="Line: " FontSize="Large" FontAttributes="Bold"/>
-
+                    <Label Text="Path: " FontSize="Large" FontAttributes="Bold"/>
+                    <Polyline />
                 </VerticalStackLayout>
             </Frame>
         </VerticalStackLayout>

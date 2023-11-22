@@ -19,7 +19,7 @@ namespace Project1
 
             //Flyout nav
 
-            MainPage = new BasicControl();
+            MainPage = new MainPage();
         }
     }
 }
