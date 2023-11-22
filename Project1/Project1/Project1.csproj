@@ -74,6 +74,9 @@
 	  <MauiXaml Update="Pages\Pages\Page2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="SomeBasicControl\BasicControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

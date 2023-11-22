@@ -1,6 +1,4 @@
-﻿
-using Project1.Layouts;
-using AbsoluteLayout = Project1.Layouts.AbsoluteLayout;
+﻿using Project1.SomeBasicControl;
 
 namespace Project1
 {
@@ -21,7 +19,7 @@ namespace Project1
 
             //Flyout nav
 
-            MainPage = new AbsoluteLayout();
+            MainPage = new BasicControl();
         }
     }
 }

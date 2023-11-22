@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.SomeBasicControl.BasicControl"
+             Title="BasicControl">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10">
+            <Frame Margin="10">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Indicator Activity: " FontSize="Large" FontAttributes="Bold"/>
+
+                    <ActivityIndicator x:Name="loading" IsRunning="True"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Button 
+                x:Name="activityChangeBtn"
+                Text="Turn off activity" 
+                FontSize="Large" 
+                HorizontalOptions="Center"
+                Clicked="activityChangeBtn_Clicked"/>
+
+            <Frame Margin="10">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Progress bar: " FontSize="Large" FontAttributes="Bold"/>
+                    <ProgressBar Progress=".5" ProgressColor="Cyan"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Box view: " FontSize="Large" FontAttributes="Bold"/>
+                    <BoxView Color="Gold"
+                             CornerRadius="10"
+                             WidthRequest="200"
+                             HeightRequest="200"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Rectangle: " FontSize="Large" FontAttributes="Bold"/>
+
+                    <Rectangle HeightRequest="200" WidthRequest="200"
+                        BackgroundColor="Red"
+                        StrokeThickness="5"
+                               Stroke="Black"/>
+                </VerticalStackLayout>
+             </Frame>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Line: " FontSize="Large" FontAttributes="Bold"/>
+                    <Line X1="0" Y1="0" X2="350" Y2="90" Stroke="Gold"
+                          StrokeThickness="10"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Ellipse: " FontSize="Large" FontAttributes="Bold"/>
+                    <Ellipse Fill="Green"
+                             WidthRequest="300"
+                             HeightRequest="100"
+                             Stroke="Black"
+                             StrokeThickness="10"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Polygon: " FontSize="Large" FontAttributes="Bold"/>
+                    <Polygon Fill="Green"
+                             Points="0,10,300,240,200,150,100,300,220,200"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Line: " FontSize="Large" FontAttributes="Bold"/>
+
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -4,7 +4,9 @@
              x:Class="Project1.Layouts.AbsoluteLayout"
              Title="AbsoluteLayout">
     <AbsoluteLayout>
-        <Button Text="But 1" FontSize="Large"/>
-        <Button Text="But 2" FontSize="Large"/>
+        <Button Text="But 1" FontSize="Large"
+                AbsoluteLayout.LayoutBounds="20, 30, 200, 50"/>
+        <Button Text="But 2" FontSize="Large"
+                AbsoluteLayout.LayoutBounds="20, 100, 200, 50"/>
     </AbsoluteLayout>
 </ContentPage>
