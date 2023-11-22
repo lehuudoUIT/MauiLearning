@@ -34,6 +34,10 @@ public partial class CarouselIndicatorDemo : ContentPage
                 Description = "This is item 5"
             }
         };
+
+		//carouselView.ItemsSource = items;
+
         InitializeComponent();
-	}
+        carouselView.ItemsSource = items;
+    }
 }
