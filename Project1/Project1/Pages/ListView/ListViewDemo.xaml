@@ -3,20 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Project1.Pages.ListView.ListViewDemo"
              Title="ListViewDemo">
-    <ListView x:Name="listView" SeparatorColor="Red" HasUnevenRows="True">
+    <ListView x:Name="listView" 
+              SeparatorColor="Red" 
+              HasUnevenRows="True"
+              SelectionMode="None">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
-                    <VerticalStackLayout VerticalOptions="Center"
-                                         Padding="20">
-                        <Label Text="{Binding Title}" 
-                               FontSize="Large" 
-                               TextColor="Black" 
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               />
-                    </VerticalStackLayout>
-                </ViewCell>
+                <TextCell Text="{Binding Title}" Detail="{Binding Description}"
+                          TextColor="Green" DetailColor="Red"
+                          />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
